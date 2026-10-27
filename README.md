@@ -41,12 +41,10 @@ Keep the project folder intact. Images and other resources are referenced by the
 | [chooseCursor.cs](Doodle_222257U/chooseCursor.cs) | Cursor-selection form |
 | `*.Designer.cs`, `*.resx`, `Properties/` | Layouts, resources, and generated accessors |
 
-## Limitations and verification
+## Limitations
 
-The application is a desktop coursework prototype. Saving uses a rendered bitmap of the canvas rather than an editable layered document. Do not assume undo/redo, autosave, or additional export formats are supported. Verify a saved image by reopening it before using the app for important drawings.
+The canvas is saved as a rendered BMP image rather than an editable layered document. Undo/redo, autosave, and additional export formats are not provided.
 
-Solution/resource references were checked during preparation; the Windows build and drawing/export workflow have not been run here. Alternate machine-specific source copies, IDE files, and compiled outputs remain outside this repository.
+## Author
 
-## Provenance
-
-Preserved from Chua Jia Sheng's supplied `Doodle_222257U` project. Bundled teaching examples are separated into [winforms-reference-examples](https://github.com/ChuaJiaSheng/winforms-reference-examples); their inclusion does not imply independent authorship.
+Chua Jia Sheng.
