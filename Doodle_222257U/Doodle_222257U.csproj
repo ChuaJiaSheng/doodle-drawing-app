@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C94BE904-3CBB-4B89-A982-FA09CA247739}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Doodle_222257U</RootNamespace>
+    <AssemblyName>Doodle_222257U</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chooseCursor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chooseCursor.Designer.cs">
+      <DependentUpon>chooseCursor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm_222257U.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm_222257U.Designer.cs">
+      <DependentUpon>MainForm_222257U.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="chooseCursor.resx">
+      <DependentUpon>chooseCursor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm_222257U.resx">
+      <DependentUpon>MainForm_222257U.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erasor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brush.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileload.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\angelBlushingSmile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\faceWithTearsOfJoy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\grinningFace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\heartSmiley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\hondaUpAmazeThumbs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\loudlyCrying.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\smiley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\smileyThumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\smilingFaceWithSunglassesCool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\tongueOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\winkEmoji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\badSmiley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\fearful.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\unamusedFace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\piracyPirate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emoji\sadCrying.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campus.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetDefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\AppStaring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\Crosshair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\Hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\HSplit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\Ibeam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\No.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\NoMove2D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\NoMoveHoriz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\NoMoveVert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\PanEast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\PanNE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\PanNorth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\PanNW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\PanSE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\PanSouth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\PanSW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\PanWest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\SizeAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\Sizenesw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\Sizens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\Sizenwse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\Sizzeew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\UpArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\VSplit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursor\WaitCursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorScale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greyScale.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawCat.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
