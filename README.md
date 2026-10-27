@@ -14,14 +14,30 @@ A Windows Forms drawing and image-editing coursework application. It provides a 
 - Save the canvas as a **BMP** image.
 - A cursor-selection form and a simple demonstration login screen.
 
-## Build and run
+## Reproduce on Windows
 
-1. Use Windows and Visual Studio with **.NET desktop development** and .NET Framework 4.7.2 support.
-2. Open [Doodle_222257U.sln](Doodle_222257U.sln).
-3. Build the solution and start it from Visual Studio.
-4. The entry point opens `Login`. Its comparison values are hard-coded in [Login.cs](Doodle_222257U/Login.cs); inspect or change these locally for the demonstration. This is not an account service or secure authentication system.
+**Prerequisites:** Git, Windows, Visual Studio with the **.NET desktop development** workload, and the **.NET Framework 4.7.2 targeting/developer pack**. This solution uses .NET Framework rather than a cross-platform .NET application.
 
-Keep the project folder intact. Images and other resources are referenced by the project and generated resource-accessor files.
+```powershell
+git clone https://github.com/ChuaJiaSheng/doodle-drawing-app.git
+cd doodle-drawing-app
+Start-Process .\\Doodle_222257U.sln
+```
+
+In Visual Studio, select **Debug / Any CPU**, set `Doodle_222257U` as the startup project if prompted, then choose **Build → Build Solution** and press **F5**. Keep all resource files with the project.
+
+Alternatively, in a **Developer PowerShell for Visual Studio** terminal at the repository root:
+
+```powershell
+msbuild .\\Doodle_222257U.sln /p:Configuration=Debug /p:Platform=AnyCPU
+& .\\Doodle_222257U\\bin\\Debug\\Doodle_222257U.exe
+```
+
+**First launch:** the app opens the demonstration login form. In `Doodle_222257U/Login.cs`, locate the comparison in `btnLogin_Click`. For a local demo, set the username/password literals in both the success and failure conditions to values of your choice, then rebuild and sign in with those same values. Do not reuse a real account password; these are plain-text demo comparisons.
+
+**Expected result:** after the demo login, the drawing window opens. Select a pen or brush, draw a stroke, save to a `.bmp` file, and reopen that file to confirm the exported image contains the drawing.
+
+**Troubleshooting:** an MSB3644/framework-reference error usually means the targeting pack is missing; `msbuild` not found means the command was run outside a Visual Studio developer terminal. Missing resource errors require restoring the resource files and their original relative paths. If login always fails, check that both comparison branches use the same demo values.
 
 ## Basic drawing workflow
 
